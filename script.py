@@ -2,12 +2,11 @@ from google import genai
 from google.genai import types
 from PIL import Image
 from io import BytesIO
-
 import PIL.Image
 
 image = PIL.Image.open('dazai.jpg')
 
-client = genai.Client("AIzaSyDg84wKQEQv3vnILhhqK4VZxq21ItCApvY")
+client = genai.Client(api_key='AIzaSyDg84wKQEQv3vnILhhqK4VZxq21ItCApvY')
 
 text_input = ('Hi, This is a picture of me.'
             'Can you add a llama next to me?',)
